@@ -1,0 +1,82 @@
+<!--
+///Type the inital code for html..
+/// If your are using Atom just type html and hit enter . -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Register</title>
+  </head>
+  <body>
+   <!-- Define a name (resister) using h1 tag. -->
+    <h1>Register</h1>
+        <!-- All the code will be written under the form tag from html add form tag first.
+         you can read about form here >>(https://www.w3schools.com/tags/tag_form.asp)  -->
+
+          <form class="form" action="index.html" method="post">
+            <!-- Now define label for first and last name and add input tag for input of name. -->
+            <label for="first">First Name</label>
+            <input type="text" name="" value="" placeholder="Enter First Name" required >
+            <label for="last">Last Name</label>
+            <input type="text" name="" value="" placeholder="Enter Last Name" required>
+            <!-- For dots like buttons(radio button) define inpute tag with type="radio" and
+            make sure for every radio button name must be same(it can be any name)
+            so that only one is selected at a time.  -->
+            <div class="">
+              <label for="">Male</label>
+              <input type="radio" name="gender" value="Male">
+              <label for="">Female</label>
+              <input type="radio" name="gender" value="Female">
+              <label for="">Other</label>
+              <input type="radio" name="gender" value="Other">
+            </div>
+            <!-- same as first and last name define similar label and input but for
+             email the type of the inpute must be email and for password
+            the type must be password (add required so that the sapce must be filled) -->
+            <div class="">
+              <label for="email">Email:</label>
+              <input type="email" name="email" value="" placeholder="Enter Email" required>
+              <label for="password">Last Name</label>
+              <input type="password" name="password" value="" placeholder="Enter Password" pattern=".{5,10}"
+              required title="Enter password between 5 to 10 char">
+            </div>
+            <!-- for Birthday add three select (for months,days,years) in label after adding text
+             Birthday for those dropdown options and inside select add <option value="">here will be the option</option>
+            (i use few examples like for months i have not use every months in the option )       -->
+            <div class="">
+              <label for="">
+                Birthday:
+               <select class="" name="month">
+                 <option value="">Month</option>
+                 <option value="">Jan</option>
+                 <option value="">Fab</option>
+                 <option value="">Mar</option>
+               </select>
+               <select class="" name="day">
+                 <option value="">Day</option>
+                 <option value="">1</option>
+                 <option value="">2</option>
+                 <option value="">3</option>
+               </select>
+               <select class="" name="year">
+                 <option value="">Year</option>
+                 <option value="">1998</option>
+                 <option value="">1999</option>
+                 <option value="">2000</option>
+               </select>
+              </label>
+            </div>
+            <!-- For last line use lable as usual and for checkbox define input with type="checkbox".  -->
+            <div class="">
+                <label for="agreed"> I agree to the terms and conditions :</label>
+                <input type="checkbox" name="" value="">
+            </div>
+             <!-- finally last thing the submit button here use input but with button as the type (type="button") and add name and vale as submit. -->
+            <div class="">
+               <input type="button" class="form" name="submit" value="Submit">
+            </div>
+       </form>
+  </body>
+</html>
+<!-- Congratulations you have compeleted your first projrct..  -->
+<!-- THANKS YOU  -->
